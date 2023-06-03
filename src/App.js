@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-
+import SearchEngine from "./SearchEngine";
 function App() {
   return (
     <div className="App">
@@ -17,7 +17,8 @@ function App() {
         >
           Learn React
         </a>
-        <p>HELLOOOO THERE</p>
+        <p>HELLOOOO </p>
+        <SearchEngine />
       </header>
     </div>
   );
