@@ -38,14 +38,23 @@ export default function SearchEngine(props) {
     return (
       <div className="Weather">
         <form onSubmit={search}>
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            onChange={updateCity}
-          />
-          <button type="Submit" className="btn btn-primary">
-            Search
-          </button>
+          <div className="row">
+            <div className="col-6">
+              <input
+                type="search"
+                class="form-control"
+                placeholder="Enter a city.."
+                onChange={updateCity}
+              />
+            </div>
+            <div className="col-6">
+              <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="Submit" className="btn btn-primary">
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
         </form>
         <WeatherData data={weather} />
       </div>
