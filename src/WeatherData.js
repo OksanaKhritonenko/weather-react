@@ -16,8 +16,7 @@ export default function WeatherData(props) {
         <div className="col-6">
           <div className="d-flex">
             <div>
-              icon: `http://openweathermap.org/img/wn/$
-              {response.data.weather[0].icon}@2x.png`,
+              <p>icon</p>
             </div>
 
             <div>
