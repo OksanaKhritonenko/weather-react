@@ -1,0 +1,10 @@
+h1 {
+  font-size: 45px;
+  font-weight: 400px;
+  line-height: 29px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+}
