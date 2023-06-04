@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function SearchEngine() {
-  const [city, setCity] = useState("");
+export default function SearchEngine(props) {
+  const [city, setCity] = useState(props.defaultCity);
   const [loaded, setLoaded] = useState(false);
   const [weather, setWeather] = useState({});
 
   function displayWeather(response) {
     setLoaded(true);
     setWeather({
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,

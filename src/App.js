@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <SearchEngine />
+        <SearchEngine defaultCity="Oslo" />
       </header>
     </div>
   );
