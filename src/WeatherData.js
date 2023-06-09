@@ -22,7 +22,7 @@ export default function WeatherData(props) {
             <li>
               <FormatedDate date={props.data.date} />
             </li>
-            <li className="text-capitalize">{props.data.description}</li>
+
             <li>
               <Temperature celsius={props.data.temperature} />
             </li>
@@ -31,6 +31,7 @@ export default function WeatherData(props) {
 
         <div className="col-6">
           <ul>
+            <li className="text-capitalize">{props.data.description}</li>
             <li>Humidity: {props.data.humidity}%</li>
             <li>Wind: {Math.round(props.data.wind)} km/h</li>
           </ul>
