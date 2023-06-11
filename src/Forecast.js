@@ -10,8 +10,8 @@ export default function Forecast() {
           <div className="Forecast-day">Sun</div>
           <WeatherIcon code="01d" size={36} />
           <div className="Forecast=temp">
-            <span className="forekast-temp-max">25°</span>
-            <span className="forekast-temp-min">14°</span>
+            <span className="forecast-temp-max">25°</span>
+            <span className="forecast-temp-min">14°</span>
           </div>
         </div>
       </div>
