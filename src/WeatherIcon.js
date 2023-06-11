@@ -2,7 +2,7 @@ import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export default function Icon(props) {
+export default function WeatherIcon(props) {
   const codeMapping = {
     "01d": "CLEAR_DAY",
     "01n": "CLEAR_NIGHT",
