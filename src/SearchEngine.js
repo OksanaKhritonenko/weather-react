@@ -12,7 +12,7 @@ export default function SearchEngine(props) {
     setWeather({
       ready: true,
       city: response.data.city,
-      date: new Date(response.data.dt * 1000),
+      date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       condition: response.data.condition.description,
       iconUrl: response.data.condition.icon_url,
