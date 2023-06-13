@@ -8,14 +8,15 @@ export default function WeatherData(props) {
   return (
     <div className="WeatherData">
       <div className="row d-flex">
-        <div className="col-3 mt-3">
+        <div className="col-3 mt-2">
           <img
             src={props.data.iconUrl}
             className="weather-icon"
             alt={props.data.condition}
+            width="140"
           />
         </div>
-        <div className="col-3 mt-5">
+        <div className="col-3 mt-5 pt-3 ps-4">
           <h1>{props.data.city}</h1>
         </div>
       </div>
