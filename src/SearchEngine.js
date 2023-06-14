@@ -58,6 +58,7 @@ export default function SearchEngine(props) {
           </div>
         </form>
         <WeatherData data={weather} />
+        <hr />
         <div className="Forecast">
           <Forecast data={weather} />
         </div>
