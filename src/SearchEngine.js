@@ -58,7 +58,9 @@ export default function SearchEngine(props) {
           </div>
         </form>
         <WeatherData data={weather} />
-        <Forecast data={weather} />
+        <div className="Forecast">
+          <Forecast data={weather} />
+        </div>
       </div>
     );
   } else {
